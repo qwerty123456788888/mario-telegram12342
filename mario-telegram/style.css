@@ -1,0 +1,100 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  margin: 0;
+  padding: 0;
+  background: #87CEEB;
+  font-family: 'Press Start 2P', cursive;
+  overflow: hidden;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+#game-container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#game {
+  border: 2px solid #333;
+  background: #87CEEB;
+  display: block;
+}
+
+#ui {
+  margin-top: 10px;
+  color: #333;
+  font-size: 12px;
+}
+#ui button {
+  margin-left: 8px;
+  padding: 4px 8px;
+  background: #FFD700;
+  border: 1px solid #333;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 10px;
+}
+
+/* Магазин */
+#shop-panel {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.9);
+  color: white;
+  padding: 20px;
+  overflow-y: auto;
+}
+.upgrades { display: flex; flex-direction: column; gap: 12px; margin: 15px 0; }
+.upgrade-item {
+  background: #222;
+  padding: 10px;
+  border-radius: 6px;
+}
+.upgrade-item button {
+  margin-top: 4px;
+  padding: 4px 10px;
+  background: #FFD700;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 10px;
+}
+.upgrade-item button:disabled {
+  background: #555;
+  cursor: not-allowed;
+}
+.back-btn {
+  margin-top: 15px;
+  padding: 6px 12px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 12px;
+}
+
+/* Рейтинг */
+#rank-panel {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.92);
+  color: white;
+  padding: 20px;
+  overflow-y: auto;
+}
+#rank-list div {
+  padding: 6px;
+  margin: 4px 0;
+  border-radius: 4px;
+}
